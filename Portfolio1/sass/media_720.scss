@@ -1,0 +1,86 @@
+@import "compass/reset";
+
+.wrap-top{
+	padding-top:2.25em;
+}
+nav{
+	border-top: 1px solid #6b5442;
+	border-bottom: 1px solid #6b5442;
+	padding: 0.125em 0;
+}
+ul{
+	width: 42.5em;
+	margin: 0 auto;
+	float: none;
+	padding: 0;
+	li{
+		float: left;
+		margin: 0.2em;
+	}
+	li:first-child a::before{
+	display: none;
+	}
+}
+
+.logo{
+	float: none;
+	width: 14em;
+	margin: 1em auto;
+	clear: both;
+	padding-top: 13em;
+	& .title-first{
+		font-size: 2.2em;
+	}
+	& .title-second{
+		font-size: 1.4em;
+		letter-spacing: 0.7em;
+	}
+}
+.about .wrap span{
+	display: inline;
+}
+.sec{
+	width: calc(50% - 0.5em);
+	float: left;
+}
+.get-involved{
+	margin-top: 10vw;
+	margin-left: 1em;
+} 
+.volunteering{
+	margin: 0 auto 3.75em;
+	clear: both;
+	float: none;
+}
+
+.personal{
+	width: 50%;
+	float: left;
+	margin: 0;
+}
+.questionary{
+	width: 50%;
+	float: right;
+	h3{
+		margin: 0;
+	}
+}
+textarea{
+	width: 27vw;
+	margin-left: 15.5vw;
+}
+
+footer ul{
+	display: block;
+	width: 41.5em;
+	
+	li{
+		margin: 0.75em;
+	}
+	a{
+		color: #ddd8c7;
+	}
+	a::before{
+		display:none;
+	}
+}

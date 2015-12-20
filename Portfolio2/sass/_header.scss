@@ -1,0 +1,249 @@
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: FuturaCondensed, Arial, sans-serif;
+	margin: 0;
+	background: $main-color;
+	font-size:16px;
+}
+header{
+	background: url('../img/dark_leather.png');
+	position: relative;
+	z-index: 10;
+	position: relative;
+
+	&::before{
+		content:'';
+		display: block;
+		width: 100%;
+		@include border-triangle-top;
+		position: absolute;
+		bottom: -9px;
+		z-index: 15;
+	}
+
+		& .wrap{
+		min-width:20rem;
+		margin: 0 auto;
+		max-width: 60rem;
+
+			& .logo{
+				width: 13rem;
+				display: block;
+				float: left;
+				font-family: Pacifico;
+				text-decoration: none;
+				color: $header-text-color;
+				font-size: 1.25rem;
+				line-height: 3rem; 
+				margin: 0.5rem 0 0.5rem 1rem;
+			}
+
+			& nav{
+				display: block;
+				float: right;
+				width: 4rem;
+				height: 3.5rem;
+				background: url('../img/menu.png') no-repeat;
+				background-size: cover;
+				float: right;
+				margin: 0.75rem 1rem 0;
+				cursor: pointer;
+
+				&::before{
+					content:'Menu';
+					display: block;
+					font-family: Pacifico;
+					line-height: 3em;
+					width: 3.5em;
+					text-align: center;
+				}
+
+				&:hover ul{
+					display:block;
+
+				}
+
+				& ul{ 
+					float: right;
+					position: relative;
+					z-index: 15;
+					display: none;
+					background: yellow;
+					background: $main-color;
+					border-radius: 10px;
+					box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.4);
+					position: relative;
+					margin-top: 1rem;
+
+					&::before{
+						content: '';
+						display: block;
+						width: 100%;
+						height: 1rem;
+						position: absolute;
+						top: -1rem;
+					}
+
+					& li{
+						display: block;
+						position: relative;
+
+						&::before{
+							content: '';
+							display: block;
+							border-bottom: 1px solid black;
+							position: absolute;
+							top: 0;
+							left: 10%;
+							width: 80%;
+						}
+
+					&:first-child{
+						&::before{
+							display:none;
+						}
+
+					}
+
+					a{
+						display: block;
+						width: 8rem;
+						text-decoration: none;
+						text-transform: capitalize;
+						color: black;
+						padding: 0.2rem 1em;
+						letter-spacing: 0.01em;
+						line-height: 2em;
+						font-family: Pacifico;
+						font-size: 1.2rem;
+
+						&:hover{
+							color:$background-image-color;
+						}
+
+					}
+					& .activePage{
+							color:$background-image-color;
+							opacity: 0.5;
+						}
+				}
+			}
+		}
+	}
+}
+.clear-fix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@media screen and (min-width: 720px){
+body{
+	background-image: url('../img/backgroundMap.png');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+header{
+
+	.wrap{
+
+		& .logo{
+			width: 14rem;
+			font-size: 1.5rem;
+			margin-left: 2rem;
+		}
+		& nav{
+			width: auto;
+			height: auto;
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			background: none;
+			float: right;
+			margin: 0.75rem;
+
+
+			&::before{
+				display:none;
+			}
+
+			& ul{
+				margin: 0;
+				display: block;
+				background: transparent;
+				border:none;
+				box-shadow: none;
+
+				&::before{
+					display:none;
+				}
+
+				& li{
+					display: block;
+					float: left;
+					margin-left: 0.5rem;
+					margin-bottom: 0;
+
+					&::before{
+						display:none;
+					}
+
+					&:first-child{
+						padding-top: 0;
+					}
+
+					a{
+						width: auto;
+						background: none;
+						border: none;
+						border-radius: 0;
+						box-shadow: none;
+						font-size: 1.25rem;
+						font-family: FuturaCondensed;
+						color: $main-color;
+						text-transform: uppercase;
+
+						&:hover{
+							opacity:0.5;
+							color: $main-color;
+						}
+
+						&:active{
+							color: $background-image-color;
+						}
+					}
+					& .activePage{
+							/*color:$background-image-color;*/
+							opacity: 0.9;
+						}
+				}
+			}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 977px){
+header{
+
+	.wrap{r
+
+		& nav{
+
+			& ul{
+
+				& li{
+					display: block;
+					float: left;
+					margin-left: 1.6rem;
+					}
+				}
+			}
+			}
+		}
+
+
+}

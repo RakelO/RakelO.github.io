@@ -1,0 +1,512 @@
+/* line 5, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: Mackintosh;
+  src: url("../fonts/Mackintosh SF.ttf");
+}
+/* line 12, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/style.scss */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  background: #fefcea;
+  color: #19120b;
+}
+
+/* line 21, ../sass/style.scss */
+.wrap {
+  min-width: 20em;
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+/* line 26, ../sass/style.scss */
+.wrap-top {
+  background: url("../img/back.png") no-repeat 50% 100%;
+  max-width: 100%;
+}
+
+/* line 31, ../sass/style.scss */
+ul {
+  width: 8em;
+  float: right;
+  padding: 2em 0 0.5em;
+}
+/* line 35, ../sass/style.scss */
+ul a::before {
+  content: '';
+  display: block;
+  float: left;
+  width: 16px;
+  height: 1.3em;
+  background: url("../img/sprite.png") no-repeat 2px 3px;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+/* line 45, ../sass/style.scss */
+ul a {
+  line-height: 2.5em;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #19120b;
+}
+/* line 53, ../sass/style.scss */
+ul a:hover {
+  color: #bab8a5;
+}
+/* line 56, ../sass/style.scss */
+ul a:active {
+  color: #f4b380;
+}
+
+/* line 61, ../sass/style.scss */
+.logo {
+  width: 55vw;
+  float: left;
+  background: url("../img/tree.png") no-repeat;
+  background-size: contain;
+  margin-top: 1em;
+  font-family: Mackintosh;
+  padding: 52.5vw 0 0.5em;
+  text-align: center;
+}
+/* line 70, ../sass/style.scss */
+.logo h1 {
+  font-size: 1.75em;
+}
+/* line 73, ../sass/style.scss */
+.logo h3 {
+  font-size: 1.4em;
+  letter-spacing: 0.48em;
+  padding-left: 0.4em;
+}
+
+/* line 80, ../sass/style.scss */
+.about {
+  background: #e7e5d4;
+  clear: both;
+}
+/* line 84, ../sass/style.scss */
+.about .wrap {
+  background: #dedbc4;
+  padding: 1.25em;
+  max-width: 60em;
+  text-align: justify;
+  position: relative;
+  line-height: 1.5em;
+}
+/* line 92, ../sass/style.scss */
+.about .wrap::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10vw;
+  background: #bab8a5;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+/* line 102, ../sass/style.scss */
+.about .wrap span {
+  display: none;
+}
+
+/* line 107, ../sass/style.scss */
+.sec, .programs, .get-involved, .volunteering {
+  width: 100%;
+  padding: 2em 1.5em;
+  font-size: 0.8em;
+  text-align: justify;
+  line-height: 1.5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.5em;
+}
+/* line 117, ../sass/style.scss */
+.sec h2, .programs h2, .get-involved h2, .volunteering h2 {
+  font-family: Mackintosh;
+  font-size: 2.2em;
+  /*35.2px*/
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+/* line 123, ../sass/style.scss */
+.sec p, .programs p, .get-involved p, .volunteering p {
+  min-height: 7.5em;
+}
+/* line 126, ../sass/style.scss */
+.sec a, .programs a, .get-involved a, .volunteering a {
+  display: block;
+  margin: 0 auto 0;
+  padding-top: 0.25em;
+  text-align: center;
+  width: 13.7em;
+  height: 4.6em;
+  background: url("../img/sprite.png") no-repeat 0 -55px;
+  text-decoration: none;
+  color: #7c5c3e;
+  font-family: 'Times New Roman';
+}
+/* line 138, ../sass/style.scss */
+.sec a:hover, .programs a:hover, .get-involved a:hover, .volunteering a:hover {
+  opacity: 0.5;
+}
+
+/* line 143, ../sass/style.scss */
+.programs {
+  background-image: url("../img/programs.jpg");
+  margin-top: 10vw;
+}
+
+/* line 148, ../sass/style.scss */
+.get-involved {
+  background-image: url("../img/get-involved.jpg");
+}
+
+/* line 152, ../sass/style.scss */
+.volunteering {
+  background-image: url("../img/volunteering.jpg");
+  margin-bottom: 3.75em;
+}
+
+/* line 157, ../sass/style.scss */
+.contacts {
+  border-top: 1px solid #ccc3b1;
+  clear: both;
+}
+/* line 161, ../sass/style.scss */
+.contacts p {
+  width: 12em;
+  float: left;
+  font-size: 0.75em;
+  margin: 2.2em 0 2.8em;
+  padding-left: 1.5em;
+}
+
+/* line 170, ../sass/style.scss */
+.social, .facebook, .twitter, .rss, .mail {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: url("../img/sprite.png") no-repeat -45px -132px;
+  float: right;
+  margin: 3em 0.375em 0;
+}
+/* line 179, ../sass/style.scss */
+.social:hover, .facebook:hover, .twitter:hover, .rss:hover, .mail:hover {
+  opacity: 0.5;
+}
+/* line 182, ../sass/style.scss */
+.social:active, .facebook:active, .twitter:active, .rss:active, .mail:active {
+  box-shadow: 0 0 1.25em #a89380;
+}
+
+/* line 191, ../sass/style.scss */
+.twitter {
+  background-position: -86px -132px;
+}
+
+/* line 195, ../sass/style.scss */
+.rss {
+  background-position: -130px -132px;
+}
+
+/* line 199, ../sass/style.scss */
+.mail {
+  background-position: -173px -132px;
+}
+
+/* line 203, ../sass/style.scss */
+footer {
+  background: #503928;
+  text-align: center;
+  padding: 0.5em 0 3.2em;
+}
+/* line 208, ../sass/style.scss */
+footer ul {
+  display: none;
+}
+/* line 211, ../sass/style.scss */
+footer ul a:hover {
+  color: black;
+}
+/* line 215, ../sass/style.scss */
+footer ul a:active {
+  color: #f4b380;
+}
+/* line 220, ../sass/style.scss */
+footer span {
+  font-size: 0.75em;
+  color: #a89380;
+}
+
+/* line 225, ../sass/style.scss */
+.clear-fix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 720px) {
+  /* line 3, ../sass/media_720.scss */
+  .wrap-top {
+    padding-top: 2.25em;
+  }
+
+  /* line 6, ../sass/media_720.scss */
+  nav {
+    border-top: 1px solid #6b5442;
+    border-bottom: 1px solid #6b5442;
+    padding: 0.125em 0;
+  }
+
+  /* line 11, ../sass/media_720.scss */
+  ul {
+    width: 42.5em;
+    margin: 0 auto;
+    float: none;
+    padding: 0;
+  }
+  /* line 16, ../sass/media_720.scss */
+  ul li {
+    float: left;
+    margin: 0.2em;
+  }
+  /* line 20, ../sass/media_720.scss */
+  ul li:first-child a::before {
+    display: none;
+  }
+
+  /* line 25, ../sass/media_720.scss */
+  .logo {
+    float: none;
+    width: 14em;
+    margin: 1em auto;
+    clear: both;
+    padding-top: 13em;
+  }
+  /* line 31, ../sass/media_720.scss */
+  .logo .title-first {
+    font-size: 2.2em;
+  }
+  /* line 34, ../sass/media_720.scss */
+  .logo .title-second {
+    font-size: 1.4em;
+    letter-spacing: 0.7em;
+  }
+
+  /* line 39, ../sass/media_720.scss */
+  .about .wrap span {
+    display: inline;
+  }
+
+  /* line 42, ../sass/media_720.scss */
+  .sec, .programs, .get-involved, .volunteering {
+    width: calc(50% - 0.5em);
+    float: left;
+  }
+
+  /* line 46, ../sass/media_720.scss */
+  .get-involved {
+    margin-top: 10vw;
+    margin-left: 1em;
+  }
+
+  /* line 50, ../sass/media_720.scss */
+  .volunteering {
+    margin: 0 auto 3.75em;
+    clear: both;
+    float: none;
+  }
+
+  /* line 56, ../sass/media_720.scss */
+  .personal {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+
+  /* line 61, ../sass/media_720.scss */
+  .questionary {
+    width: 50%;
+    float: right;
+  }
+  /* line 64, ../sass/media_720.scss */
+  .questionary h3 {
+    margin: 0;
+  }
+
+  /* line 68, ../sass/media_720.scss */
+  textarea {
+    width: 27vw;
+    margin-left: 15.5vw;
+  }
+
+  /* line 73, ../sass/media_720.scss */
+  footer ul {
+    display: block;
+    width: 41.5em;
+  }
+  /* line 77, ../sass/media_720.scss */
+  footer ul li {
+    margin: 0.75em;
+  }
+  /* line 80, ../sass/media_720.scss */
+  footer ul a {
+    color: #ddd8c7;
+  }
+  /* line 83, ../sass/media_720.scss */
+  footer ul a::before {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 4, ../sass/media_960.scss */
+  nav ul {
+    width: 52em;
+  }
+  /* line 6, ../sass/media_960.scss */
+  nav ul li {
+    margin-right: 0.625em;
+    margin-left: 0.625em;
+  }
+  /* line 10, ../sass/media_960.scss */
+  nav ul li a::before {
+    margin-right: 1.25em;
+  }
+
+  /* line 17, ../sass/media_960.scss */
+  .sec, .programs, .get-involved, .volunteering {
+    width: calc(33.38% - 0.625em);
+    float: left;
+    padding: 2.5em 2.3em;
+    margin-bottom: 4.7em;
+  }
+  /* line 23, ../sass/media_960.scss */
+  .sec p, .programs p, .get-involved p, .volunteering p {
+    min-height: 12em;
+  }
+  /* line 27, ../sass/media_960.scss */
+  .sec h2, .programs h2, .get-involved h2, .volunteering h2 {
+    margin-bottom: 0.8em;
+  }
+
+  /* line 31, ../sass/media_960.scss */
+  .get-involved {
+    margin-left: 0.865em;
+  }
+
+  /* line 34, ../sass/media_960.scss */
+  .volunteering {
+    margin: 0;
+    margin-top: 10vw;
+    margin-left: 0.865em;
+    clear: none;
+    float: left;
+  }
+
+  /* line 42, ../sass/media_960.scss */
+  textarea {
+    width: 20em;
+    margin-left: 11.4em;
+  }
+
+  /* line 46, ../sass/media_960.scss */
+  .questionary label {
+    margin: 1.45em 0;
+  }
+
+  /* line 51, ../sass/media_960.scss */
+  .contacts p {
+    width: 30em;
+    padding-left: 0;
+  }
+  /* line 55, ../sass/media_960.scss */
+  .contacts p span {
+    display: block;
+    width: 10em;
+  }
+
+  /* line 61, ../sass/media_960.scss */
+  footer {
+    padding-bottom: 4.9em;
+  }
+  /* line 63, ../sass/media_960.scss */
+  footer ul {
+    width: 48.2em;
+  }
+  /* line 66, ../sass/media_960.scss */
+  footer ul li {
+    margin: 1.25em;
+  }
+}

@@ -1,0 +1,191 @@
+.wrap{
+
+
+	input[name="info"]{
+		display: none;
+	}
+	label{
+		display: none;
+	}
+
+	.text-info{
+		display: block;
+		padding: 0 1rem ;
+		text-align: center;
+		/*background: red;*/
+		margin-bottom: 2rem;
+
+		h2{
+			font-family: Pacifico;
+			font-size: 1.5rem;
+			color: $background-image-color;
+			margin-bottom: 1rem;
+			margin-top: 0;
+		}
+
+		& p{
+			color: $background-image-color;
+			text-align: justify;
+			margin:0 auto 0.5rem;
+			line-height: 1.2;
+			width: 90vw;
+		}
+
+		& iframe{
+			width: 90vw;
+			height: 50vw;
+			border: 5px solid $main-color;
+			box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.4);
+			border-radius: 5px;
+		}
+	}
+	.lindy{
+		@extend .text-info;
+}
+	.balboa{
+		@extend .text-info;
+	}
+	.blues{
+		@extend .text-info;
+	}
+
+	.boogie{
+		@extend .text-info;
+	}
+
+}
+
+@media screen and (min-width: 720px){
+.wrap{
+
+		& .dance-label{
+			display: block;
+			float: left;
+			width: 20vw;
+			height: 20vw;
+			margin: 1rem 2.2vw 2.5rem;
+			border-radius: 50%;
+			border: 5px solid $main-color;
+			box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.4);
+			cursor: pointer;
+
+			&:hover{
+				animation: tada 2s;
+			}
+
+			&::after{
+				content: '';
+				display: block;
+				font-family: Pacifico;
+				font-size: 1.5rem;
+				color: $background-image-color;
+				text-align: center;
+				margin-top: 21vw;
+			}
+
+			&[for="lindy"]{
+				background: url('../img/swing-dancing.jpg') no-repeat;
+				background-size: cover;
+
+				&::after{
+					content: 'Lindy Hop';
+				}
+	}
+
+			&[for="balboa"]{
+				background: url('../img/balboa1.jpg') no-repeat;
+				background-size: cover;
+
+				&::after{
+					content: 'Balboa';
+				}
+	}
+			&[for="blues"]{
+				background: #fff url('../img/agenda2_240.jpg') no-repeat 20px 0;
+				background-size: contain;
+
+				&::after{
+					content: 'Blues';
+				}
+	}
+			&[for="boogie"]{
+				background: #fff url('../img/boogie.jpg') no-repeat 0 10px;
+				background-size: contain;
+
+				&::after{
+					content: 'Boogie Woogie';
+				}
+			}
+}
+
+
+	#lindy:checked~.lindy,
+	#balboa:checked~.balboa,
+	#blues:checked~.blues,
+	#boogie:checked~.boogie{
+		display: block;
+	}
+	#lindy:checked~div>label[for="lindy"],
+	#balboa:checked~div>label[for="balboa"],
+	#blues:checked~div>label[for="blues"],
+	#boogie:checked~div>label[for="boogie"]{
+		border-color: $background-image-color;
+
+	}
+.text-info{
+	display: none;
+	margin-top: 0.7rem;
+	margin-bottom: 1rem;
+
+	& iframe{
+		width: 90vw;
+		height: 50vw;
+	}
+	 & p{
+	 	margin-bottom: 2rem;
+	 	height: 5rem;
+	 }
+
+}
+}
+}
+
+@media screen and (min-width: 977px){
+.wrap{
+
+	& .tabs-container{
+		text-align: center;
+		padding-bottom: 1rem;
+
+	}
+
+		& .dance-label{
+			width: 12rem;
+			height: 12rem;
+			margin: 1rem 1.5rem 3rem;
+
+			&::after{
+				margin-top: 13rem;
+			}
+			}
+
+		.text-info{
+			display: none;
+			margin-top: 1rem;
+
+			h2{
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			& iframe{
+				width: 75%;
+				height: 25em;
+			}
+			& p{
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

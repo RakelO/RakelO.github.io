@@ -1,0 +1,176 @@
+/* line 5, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/media_720.scss */
+.wrap-top {
+  padding-top: 2.25em;
+}
+
+/* line 6, ../sass/media_720.scss */
+nav {
+  border-top: 1px solid #6b5442;
+  border-bottom: 1px solid #6b5442;
+  padding: 0.125em 0;
+}
+
+/* line 11, ../sass/media_720.scss */
+ul {
+  width: 42.5em;
+  margin: 0 auto;
+  float: none;
+  padding: 0;
+}
+/* line 16, ../sass/media_720.scss */
+ul li {
+  float: left;
+  margin: 0.2em;
+}
+/* line 20, ../sass/media_720.scss */
+ul li:first-child a::before {
+  display: none;
+}
+
+/* line 25, ../sass/media_720.scss */
+.logo {
+  float: none;
+  width: 14em;
+  margin: 1em auto;
+  clear: both;
+  padding-top: 13em;
+}
+/* line 31, ../sass/media_720.scss */
+.logo .title-first {
+  font-size: 2.2em;
+}
+/* line 34, ../sass/media_720.scss */
+.logo .title-second {
+  font-size: 1.4em;
+  letter-spacing: 0.7em;
+}
+
+/* line 39, ../sass/media_720.scss */
+.about .wrap span {
+  display: inline;
+}
+
+/* line 42, ../sass/media_720.scss */
+.sec {
+  width: calc(50% - 0.5em);
+  float: left;
+}
+
+/* line 46, ../sass/media_720.scss */
+.get-involved {
+  margin-top: 10vw;
+  margin-left: 1em;
+}
+
+/* line 50, ../sass/media_720.scss */
+.volunteering {
+  margin: 0 auto 3.75em;
+  clear: both;
+  float: none;
+}
+
+/* line 56, ../sass/media_720.scss */
+.personal {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+/* line 61, ../sass/media_720.scss */
+.questionary {
+  width: 50%;
+  float: right;
+}
+/* line 64, ../sass/media_720.scss */
+.questionary h3 {
+  margin: 0;
+}
+
+/* line 68, ../sass/media_720.scss */
+textarea {
+  width: 27vw;
+  margin-left: 15.5vw;
+}
+
+/* line 73, ../sass/media_720.scss */
+footer ul {
+  display: block;
+  width: 41.5em;
+}
+/* line 77, ../sass/media_720.scss */
+footer ul li {
+  margin: 0.75em;
+}
+/* line 80, ../sass/media_720.scss */
+footer ul a {
+  color: #ddd8c7;
+}
+/* line 83, ../sass/media_720.scss */
+footer ul a::before {
+  display: none;
+}

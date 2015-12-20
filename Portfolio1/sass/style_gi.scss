@@ -1,0 +1,206 @@
+@import "compass/reset";
+@font-face {
+    font-family: Mackintosh;
+    src: url('../fonts/Mackintosh SF.ttf');
+   }
+$main-color: #fefcea;
+$main-text-color: #19120b;
+$about-color: #e7e5d4;
+$footer-color: #503928;
+$footer-span: #a89380;
+$border-color: #ccc3b1;
+
+ *{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	background: $main-color;
+	color: $main-text-color;
+}
+.wrap{
+	min-width:20em;
+	margin: 0 auto;
+	max-width: 60em;
+}
+.wrap-top{
+	background: url('../img/back.png') no-repeat 50% 100%;
+	max-width: 100%;
+}
+ul{
+	width: 8em;
+	float: right;
+	padding:2em 0 0.5em;
+	& a::before{
+		content: '';
+		display: block;
+		float: left;
+		width: 16px;
+		height: 1.3em;
+		background: url('../img/sprite.png') no-repeat 2px 3px;
+		margin-right: 0.5em;
+		margin-top: 0.5em;
+	}
+	& a{
+		line-height: 2.5em;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.875em;
+		color: $main-text-color;
+	
+		&:hover{
+			color: #bab8a5;
+		}
+		&:active{
+			 color: #f4b380;
+		}
+	}
+}
+.logo{
+	width: 55vw;
+	float: left;
+	background: url('../img/tree.png') no-repeat;
+	background-size: contain;
+	margin-top: 1em;
+	font-family: Mackintosh;
+	padding: 52.5vw 0 0.5em;
+	text-align: center;
+	& h1{
+		font-size: 1.75em;
+	}
+	& h3{
+		font-size: 1.4em;
+		letter-spacing: 0.48em;
+		padding-left: 0.4em;
+
+	}
+}
+.heading-page{
+	font-family: Mackintosh;
+	font-size: 2.2em; /*35.2px*/
+	margin: 1em;
+	text-align: center;
+}
+form{
+	& h3{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin: 0 0 1em;
+	}
+}
+.personal{
+	margin-bottom: 2em;
+	padding: 0 1em;
+
+	& label{
+		width: 30%;
+		display: block;
+		float: left;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		margin-top: 0.2em;
+	}
+	& input{
+		width: 60%;
+		display: block;
+		float: left;
+		margin-bottom: 1.2em;
+		color: $footer-color;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+
+		&:invalid{
+			border: 1px solid red;
+		}
+	}
+}
+.questionary{
+	margin-bottom: 1em;
+	padding: 0 1em;
+
+	& label{
+		width: 100%;
+		display: block;
+		margin: 1.25em 0;
+		font-size: 0.8em;
+
+	& input{
+		display: block;
+		float: left;
+		margin-right: 1em;
+		margin-top: 0.1em;
+		}
+	}
+}
+textarea{
+		width: 20em;
+		height: 5em;
+		display: block;
+		float: left;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+		margin: 0 1.5em 5em;
+		font-family: Ubuntu;
+}
+button{
+	display: block;
+	margin: 0 auto 1.5em;
+	text-align: center;
+	width: 13.7em;
+	height: 4.6em;
+	background: url('../img/sprite.png') no-repeat 0 -55px;
+	text-decoration: none;
+	color: #7c5c3e;
+	font-family: 'Times New Roman'; 
+	border:none;
+	clear: both;
+	cursor: pointer;
+	position: relative;
+	& span{
+	 	display: block;
+	 	margin-top: -2em;
+
+	} 
+	&:hover{
+	opacity: 0.5;
+	}
+}
+
+footer{
+	background: $footer-color;
+	text-align: center;
+	padding: 0.5em 0 3.2em;
+
+	ul{
+	display: none;
+
+			a:hover{
+				color:black;
+			}
+
+			a:active{
+			 	color: #f4b380;
+		}
+	}
+
+	& span{
+		font-size: 0.75em;
+		color: $footer-span;
+	}
+}
+.clear-fix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+@media screen and (min-width: 720px){
+	@import 'media_720';
+}
+
+@media screen and (min-width: 960px){
+	@import 'media_960';
+	
+}
+

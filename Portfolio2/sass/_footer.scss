@@ -1,0 +1,68 @@
+
+footer{
+	background: url('../img/dark_leather.png');
+	margin-top: 2rem;
+	position: relative;
+
+	&::before{
+		content:'';
+		display: block;
+		width: 100%;
+		@include border-triangle-bottom;
+		position: absolute;
+		top: -9px;
+		z-index: 15;
+	}
+
+	.wrap{
+		min-width:20rem;
+		height: 4.1em;
+		margin: 0 auto;
+		max-width: 60rem;
+		padding: 0 0.5rem;
+
+		& span{
+			display: inline-block;
+			font-size: 0.8rem;
+			line-height: 4.1rem;
+			color: $main-color;
+
+		}
+		& .social{
+			float: right;
+			width: 30px; 
+			height: 30px;
+			border-radius: 50%;
+			margin-left: 0.5rem;
+			margin-top: 1rem;
+			overflow: hidden;
+			display: block; 
+			background: #f1e9db url('../img/sprite-new1.png') no-repeat -7px -32px;
+			opacity: 0.5;
+
+			&:hover{
+				opacity: 0.9;
+			}
+		}
+
+		& .social-fb{
+			background-position: -42px 2px;
+		}
+		
+		& .social-vk{
+			background-position: -7px -66px;
+		}
+
+	}
+}
+
+@media screen and (min-width: 720px){
+footer{
+	.wrap{
+		& span{
+			font-size: 1rem;
+		}
+	}
+
+}
+}

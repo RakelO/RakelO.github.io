@@ -1,0 +1,143 @@
+/* line 5, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/media_960.scss */
+nav ul {
+  width: 52em;
+}
+/* line 6, ../sass/media_960.scss */
+nav ul li {
+  margin-right: 0.625em;
+  margin-left: 0.625em;
+}
+/* line 10, ../sass/media_960.scss */
+nav ul li a::before {
+  margin-right: 1.25em;
+}
+
+/* line 17, ../sass/media_960.scss */
+.sec {
+  width: calc(33.38% - 0.625em);
+  float: left;
+  padding: 2.5em 2.3em;
+  margin-bottom: 4.7em;
+}
+/* line 23, ../sass/media_960.scss */
+.sec p {
+  min-height: 12em;
+}
+/* line 27, ../sass/media_960.scss */
+.sec h2 {
+  margin-bottom: 0.8em;
+}
+
+/* line 31, ../sass/media_960.scss */
+.get-involved {
+  margin-left: 0.865em;
+}
+
+/* line 34, ../sass/media_960.scss */
+.volunteering {
+  margin: 0;
+  margin-top: 10vw;
+  margin-left: 0.865em;
+  clear: none;
+  float: left;
+}
+
+/* line 42, ../sass/media_960.scss */
+textarea {
+  width: 20em;
+  margin-left: 11.4em;
+}
+
+/* line 46, ../sass/media_960.scss */
+.questionary label {
+  margin: 1.45em 0;
+}
+
+/* line 51, ../sass/media_960.scss */
+.contacts p {
+  width: 30em;
+  padding-left: 0;
+}
+/* line 55, ../sass/media_960.scss */
+.contacts p span {
+  display: block;
+  width: 10em;
+}
+
+/* line 61, ../sass/media_960.scss */
+footer {
+  padding-bottom: 4.9em;
+}
+/* line 63, ../sass/media_960.scss */
+footer ul {
+  width: 48.2em;
+}
+/* line 66, ../sass/media_960.scss */
+footer ul li {
+  margin: 1.25em;
+}
