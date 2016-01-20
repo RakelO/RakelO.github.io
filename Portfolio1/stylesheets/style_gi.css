@@ -475,5 +475,6 @@ footer span {
   /* line 66, ../sass/media_960.scss */
   footer ul li {
     margin: 1.25em;
+    border: none;
   }
 }
